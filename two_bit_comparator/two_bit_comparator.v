@@ -1,0 +1,20 @@
+ module two_bit_comparator(input [1:0]a,input [1:0]b,output gt,eq,lo);
+wire w1,w2,w3,w4,w5,w6,w7,w8,w9,w10,w11;
+wire eq1,eq0;
+xnor (eq1,a[1],b[1]);
+xnor (eq0,a[0],b[0]);
+not n_1(w1,a[1]);
+not n_2(w2,a[0]);
+not n_3(w3,b[1]);
+not n_4(w4,b[0]);
+and a_1(w5,eq1,a[0],w4);
+and a_2(w6,a[1],w3);
+and a_3(w7,a[0],b[0]);
+and a_4(w8,a[1],b[1]);
+and a_5(w9,w1,w2,b[0]);
+and a_6(w10,w2,b[1],b[0]);
+and a_7(w11,w1,b[1]);
+or o_1(gt,w5,w6);
+and (eq,eq1,eq0);
+or o_3(lo,w9,w10,w11);
+endmodule       
