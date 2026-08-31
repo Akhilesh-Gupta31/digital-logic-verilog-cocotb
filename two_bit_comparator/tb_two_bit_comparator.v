@@ -9,7 +9,7 @@ initial
 begin
     $dumpfile("dump.vcd");
     $dumpvars(0,tb_two_bit_comparator);
-    $monitor($time,"tb_a=%d,tb_b=%d,tb_gt=%b,tb_eq=%b,tb_lo=%b",$time #10,tb_a,tb_b,tb_gt,tb_eq,tb_lo);
+    $monitor("Time=%0t | tb_a=%d, tb_b=%d, tb_gt=%b, tb_eq=%b, tb_lo=%b", $time, tb_a, tb_b, tb_gt, tb_eq, tb_lo);
     tb_a=2'b00;
     tb_b=2'b00;
      #10;

@@ -11,6 +11,8 @@ module tb_compare_mux;
 
     integer k;
     initial begin
+$dumpfile("dump.vcd");
+$dumpvars(0, tb_compare_mux);
         i = 4'b1011;  // fixed input pattern to select from
         for (k = 0; k < 4; k = k + 1) begin
             s = k;

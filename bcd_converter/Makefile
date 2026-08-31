@@ -1,4 +1,4 @@
-SIM_SRC = bcd.v tb_bcd.v ../adders/ripple_carry_adder.v ../adders/full_adder.v
+SIM_SRC = bcd.v tb_bcd.v ../ripple_carry_adder/ripple_carry_adder.v ../ripple_carry_adder/full_adder.v
 
 all: compile run
 
