@@ -38,3 +38,5 @@ gtkwave dump.vcd
 
 ---
 Sequential logic (flip-flops, counters, FSMs) and Python/cocotb-based verification are planned as next steps.
+
+< practice branch edit -->
