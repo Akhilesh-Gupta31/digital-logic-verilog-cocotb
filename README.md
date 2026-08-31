@@ -25,4 +25,16 @@ gtkwave dump.vcd
 ```
 
 ---
-Waveform screenshots to be added soon. Sequential logic (flip-flops, counters, FSMs) and Python/cocotb-based verification are planned as next steps once Python is learned.
+## Example Waveforms
+
+**Full Adder**
+![Full Adder Waveform](full_adder/full_adder_waveform.png)
+
+**BCD Converter (binary-to-BCD, self-checking testbench)**
+![BCD Converter Waveform](bcd_converter/bcd_converter_waveform.png)
+
+**4-to-1 Mux — Structural vs Behavioral Equivalence Check**
+![Mux Equivalence Waveform](four_to_one_mux/four_to_one_mux_waveform.png)
+
+---
+Sequential logic (flip-flops, counters, FSMs) and Python/cocotb-based verification are planned as next steps.
