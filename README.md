@@ -16,6 +16,7 @@ RTL designs and testbenches for fundamental digital logic modules, simulated usi
 | BCD Converter | Binary to BCD conversion logic | [`bcd_converter/`](bcd_converter) |
 | 2-bit Comparator | Compares two 2-bit inputs | [`two_bit_comparator/`](two_bit_comparator) |
 | 4-to-1 Multiplexer | 4-input mux with 2-bit select line | [`four_to_one_mux/`](four_to_one_mux) |
+| D Flip-Flop | Edge-triggered 1-bit memory element with async reset | [`dff/`](dff) |
 
 ## How to Run
 ```bash
@@ -37,6 +38,4 @@ gtkwave dump.vcd
 ![Mux Equivalence Waveform](four_to_one_mux/four_to_one_mux_waveform.png)
 
 ---
-Sequential logic (flip-flops, counters, FSMs) and Python/cocotb-based verification are planned as next steps.
-
-< practice branch edit -->
+Sequential logic has begun with a fully verified D flip-flop (async reset, all truth-table cases tested). Counters and FSMs are in progress next. Python/cocotb-based verification is planned further ahead.
