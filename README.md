@@ -18,6 +18,7 @@ RTL designs and testbenches for fundamental digital logic modules, simulated usi
 | 4-to-1 Multiplexer | 4-input mux with 2-bit select line | [`four_to_one_mux/`](four_to_one_mux) |
 | D Flip-Flop | Edge-triggered 1-bit memory element with async reset | [`dff/`](dff) |
 | 4-bit Counter | Synchronous up-counter with async reset, self-checking verification | [`counter/`](counter) |
+| Ripple Carry Adder (generate-block) | Scalable adder built via genvar/generate loop, verified equivalent to manual version | [`ripple_carry_adder_generate/`](ripple_carry_adder_generate) |
 
 ## How to Run
 ```bash
