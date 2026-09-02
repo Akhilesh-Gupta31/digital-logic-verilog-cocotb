@@ -20,6 +20,7 @@ RTL designs and testbenches for fundamental digital logic modules, simulated usi
 | 4-bit Counter | Synchronous up-counter with async reset, self-checking verification | [`counter/`](counter) |
 | Ripple Carry Adder (generate-block) | Scalable adder built via genvar/generate loop, verified equivalent to manual version | [`ripple_carry_adder_generate/`](ripple_carry_adder_generate) |
 | For-Loop Demo | Exhaustive procedural for-loop test of a 3-input combinational function | [`fundamentals_for_loop/`](fundamentals_for_loop) |
+| For-Loop Demo | Exhaustive procedural for-loop test of a 3-input combinational function, with a task-based refactor (tb_for_loop_demo_task.v) proving identical results | [`fundamentals_for_loop/`](fundamentals_for_loop) |
 
 ## How to Run
 ```bash
