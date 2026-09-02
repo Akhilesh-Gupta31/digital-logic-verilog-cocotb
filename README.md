@@ -17,6 +17,7 @@ RTL designs and testbenches for fundamental digital logic modules, simulated usi
 | 2-bit Comparator | Compares two 2-bit inputs | [`two_bit_comparator/`](two_bit_comparator) |
 | 4-to-1 Multiplexer | 4-input mux with 2-bit select line | [`four_to_one_mux/`](four_to_one_mux) |
 | D Flip-Flop | Edge-triggered 1-bit memory element with async reset | [`dff/`](dff) |
+| 4-bit Counter | Synchronous up-counter with async reset, self-checking verification | [`counter/`](counter) |
 
 ## How to Run
 ```bash
@@ -38,4 +39,5 @@ gtkwave dump.vcd
 ![Mux Equivalence Waveform](four_to_one_mux/four_to_one_mux_waveform.png)
 
 ---
-Sequential logic has begun with a fully verified D flip-flop (async reset, all truth-table cases tested). Counters and FSMs are in progress next. Python/cocotb-based verification is planned further ahead.
+Sequential logic now includes a fully verified D flip-flop and a self-checking 4-bit synchronous counter (independently-tracked expected value, wraparound verified). FSMs are next. Python/cocotb-based verification is planned further ahead.
+
